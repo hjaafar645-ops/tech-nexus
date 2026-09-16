@@ -1,7 +1,7 @@
-# 🛸 TechNexus - Next-Gen E-Commerce Cyber Space
+# 🛸 TechNexus - Next-Gen E-Commerce Space
 
 <div align="center">
-  <img src="hero-shot.png" alt="TechNexus Space Banner" width="100%" style="border-radius: 8px; border: 1px solid #00f0ff; box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);"/>
+  <img src="home-page.png" alt="TechNexus Space Banner" width="100%" style="border-radius: 8px; border: 1px solid #00f0ff; box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);"/>
 </div>
 
 ---
