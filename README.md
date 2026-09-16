@@ -63,5 +63,5 @@
 ---
 
 <div align="center">
-  <p><b>Engineered with Precision & High Performance by Jaafar</b></p>
+  <p><b>Engineered with Precision & High Performance by Jafar</b></p>
 </div>
