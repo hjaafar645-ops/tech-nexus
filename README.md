@@ -33,13 +33,17 @@
     <tr>
       <td width="50%" align="center">
         <p><b>🌌 Global Shop System</b></p>
-        <img src="shop-shot.png" alt="Shop Grid Architecture" width="100%" style="border-radius: 6px; border: 1px solid rgba(0,240,255,0.15);"/>
+        <img src="Shop-page.png" alt="Shop Grid Architecture" width="100%" style="border-radius: 6px; border: 1px solid rgba(0,240,255,0.15);"/>
       </td>
       <td width="50%" align="center">
-        <p><b>🔐 Quantum Access Gate</b></p>
-        <img src="hero-shot.png" alt="Register Validation Portal" width="100%" style="border-radius: 6px; border: 1px solid rgba(255,0,85,0.15);"/>
+        <p><b>🌌 Global Shop System</b></p>
+        <img src="Shop-page(2).png" alt="Register Validation Portal" width="100%" style="border-radius: 6px; border: 1px solid rgba(255,0,85,0.15);"/>
       </td>
     </tr>
+    <td width="50%" align="center">
+        <p><b>⚡ Dynamic Core Details</b></p>
+        <img src="Details-page.png" alt="Product Details Dynamic Portal" width="100%" style="border-radius: 6px; border: 1px solid rgba(0,240,255,0.25);"/>
+    </td>
   </table>
 </div>
 
