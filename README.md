@@ -9,14 +9,14 @@
 ### 🌌 Overview
 **TechNexus** is an elite, high-performance e-commerce platform built for gaming rigs, modern gadgets, and hardware enthusiasts. The application blends a sleek futuristic cyberpunk visual aesthetic with ultra-responsive architecture, advanced global state management, and seamless animations tailored for devices in **2026**.
 
-🔗 **Live Demo Space:** [👉 Click Here to Open TechNexus Live](https://netlify.app)
+🔗 **Live Demo Space:** [👉 Click Here to Open TechNexus Live](https://tech-nexus-j3r.netlify.app/)
 
 ---
 
 ### 🕹️ Advanced Architecture & Features
 
 #### 🔬 Premium UI/UX Core
-* **Dynamic Media Framework:** Engineered an adaptive **Swiper.js** module utilizing ultra-light **WebP** asset arrays with fluid cross-fade stabilization on mobile, independent of desktop assets.
+* **Dynamic Media Framework:** Engineered an adaptive **Swiper.js** module utilizing ultra-light **WebP** + **jpg** asset arrays with fluid cross-fade stabilization on mobile, independent of desktop assets.
 * **Smart Floating Interaction Layer:** Developed non-destructive floating label form inputs with localized conditional constraints.
 * **Hardware Stabilized Search:** Custom search filter wrapper built with absolute transform suppression on touch devices to ensure flawless hardware performance and zero rendering lag.
 
