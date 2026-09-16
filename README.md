@@ -41,6 +41,10 @@
       </td>
     </tr>
     <td width="50%" align="center">
+        <p><b>🌌 Global Shop System</b></p>
+        <img src="Shop-page(3).png" alt="Shop Grid Architecture" width="100%" style="border-radius: 6px; border: 1px solid rgba(0,240,255,0.15);"/>
+    </td>
+    <td width="50%" align="center">
         <p><b>⚡ Dynamic Core Details</b></p>
         <img src="Details-page.png" alt="Product Details Dynamic Portal" width="100%" style="border-radius: 6px; border: 1px solid rgba(0,240,255,0.25);"/>
     </td>
