@@ -1,0 +1,174 @@
+.background-glow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background: radial-gradient(circle at 100% 50%, var(--neon-cyan-glow) 0%, var(--bg-dark) 60%);
+}
+
+.particle {
+    position: absolute;
+    background: var(--neon-cyan);
+    border-radius: 50%;
+    filter: blur(1px);
+    box-shadow: 0 0 8px var(--neon-cyan), 0 0 15px var(--neon-cyan);
+    opacity: 0.6;
+    animation: floatRandom infinite linear;
+}
+
+.p1 {
+    width: 3px;
+    height: 3px;
+    top: 10%;
+    left: 15%;
+    animation-duration: 25s;
+}
+
+.p2 {
+    width: 4px;
+    height: 4px;
+    top: 25%;
+    left: 80%;
+    animation-duration: 35s;
+    animation-delay: -5s;
+}
+
+.p3 {
+    width: 2px;
+    height: 2px;
+    top: 40%;
+    left: 35%;
+    animation-duration: 20s;
+    animation-delay: -12s;
+}
+
+.p4 {
+    width: 5px;
+    height: 5px;
+    top: 70%;
+    left: 90%;
+    animation-duration: 45s;
+    animation-delay: -3s;
+}
+
+.p5 {
+    width: 3px;
+    height: 3px;
+    top: 85%;
+    left: 20%;
+    animation-duration: 30s;
+    animation-delay: -18s;
+}
+
+.p6 {
+    width: 4px;
+    height: 4px;
+    top: 55%;
+    left: 60%;
+    animation-duration: 28s;
+    animation-delay: -8s;
+}
+
+.p7 {
+    width: 2px;
+    height: 2px;
+    top: 15%;
+    left: 50%;
+    animation-duration: 22s;
+    animation-delay: -15s;
+}
+
+.p8 {
+    width: 3px;
+    height: 3px;
+    top: 65%;
+    left: 10%;
+    animation-duration: 32s;
+    animation-delay: -1s;
+}
+
+.p9 {
+    width: 5px;
+    height: 5px;
+    top: 45%;
+    left: 85%;
+    animation-duration: 40s;
+    animation-delay: -22s;
+}
+
+.p10 {
+    width: 2px;
+    height: 2px;
+    top: 90%;
+    left: 75%;
+    animation-duration: 18s;
+    animation-delay: -6s;
+}
+
+.p11 {
+    width: 4px;
+    height: 4px;
+    top: 30%;
+    left: 25%;
+    animation-duration: 37s;
+    animation-delay: -14s;
+}
+
+.p12 {
+    width: 3px;
+    height: 3px;
+    top: 80%;
+    left: 45%;
+    animation-duration: 26s;
+    animation-delay: -9s;
+}
+
+.p13 {
+    width: 4px;
+    height: 4px;
+    top: 5%;
+    left: 65%;
+    animation-duration: 31s;
+    animation-delay: -2s;
+}
+
+.p14 {
+    width: 2px;
+    height: 2px;
+    top: 20%;
+    left: 5%;
+    animation-duration: 23s;
+    animation-delay: -11s;
+}
+
+.p15 {
+    width: 5px;
+    height: 5px;
+    top: 35%;
+    left: 95%;
+    animation-duration: 42s;
+    animation-delay: -7s;
+}
+
+@keyframes floatRandom {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    33% {
+        transform: translate(50px, -60px);
+        opacity: 0.8;
+    }
+
+    66% {
+        transform: translate(-30px, 40px);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

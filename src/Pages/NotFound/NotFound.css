@@ -1,0 +1,101 @@
+.notfound-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 24px 60px 24px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.notfound-board {
+    max-width: 500px;
+    width: 100%;
+    background: rgba(6, 11, 22, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 6px;
+    padding: 3.5rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.error-zone {
+    font-size: 6.5rem;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.4), 0 0 40px rgba(0, 240, 255, 0.2);
+}
+
+.notfound-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-pure-white);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.notfound-line {
+    width: 100px;
+    height: 1px;
+    background: var(--neon-cyan);
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 0 8px var(--neon-cyan);
+}
+
+.notfound-message {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(248, 250, 252, 0.55);
+    margin: 0 0 2rem 0;
+}
+
+.notfound-back-btn {
+    background: var(--neon-cyan, );
+    border: none;
+    border-radius: 4px;
+    color: var(--bg-dark);
+    padding: 14px 35px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media (hover: hover) {
+    .notfound-back-btn:hover {
+        box-shadow: 0 0 10px var(--neon-cyan);
+        transform: translateY(-2px);
+    }
+}
+
+.notfound-back-btn:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 575px) {
+    .notfound-page {
+        padding: 100px 16px 40px 16px;
+    }
+
+    .notfound-board {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .error-zone {
+        font-size: 5rem;
+    }
+}

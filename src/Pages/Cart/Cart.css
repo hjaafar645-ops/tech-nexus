@@ -1,0 +1,191 @@
+.cart-page {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at 100% 50%, var(--neon-cyan-glow) 0%, var(--bg-dark) 60%);
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-section {
+    width: 100%;
+    padding: 80px 24px 40px 24px;
+}
+
+.cart-section .section-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.cart-section .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-section .section-content .cart-title {
+    max-width: max-content;
+    margin: 20px auto 12px auto;
+    padding: 14px 45px;
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-white);
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.1), inset 0 0 12px rgba(0, 240, 255, 0.05);
+    text-shadow: 0 0 3px rgba(0, 240, 255, 0.5);
+    transition: all 0.4s ease;
+}
+
+.cart-section .section-content .cart-title:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 240, 255, 0.4);
+}
+
+.cart-section .neon-line.cart-line {
+    height: 4px;
+    width: 140px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, transparent, var(--neon-cyan) 50%, transparent);
+    box-shadow: 0 0 12px var(--neon-cyan);
+    margin: 0 auto 60px auto;
+}
+
+.cart-section .empty-message {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(248, 250, 252, 0.4);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 65px 20px;
+    border: 1px dashed rgba(0, 240, 255, 0.15);
+    border-radius: 20px;
+    background: rgba(6, 11, 22, 0.2);
+    max-width: 550px;
+    margin: 40px auto;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cart-summary-box {
+    max-width: 450px;
+    width: 100%;
+    margin: 50px 0 0 auto;
+    padding: 2rem;
+    background: rgba(6, 11, 22, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 240, 255, 0.15);
+    border-radius: 4px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.summary-label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgba(248, 250, 252, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.summary-value {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 14px;
+    background: rgba(0, 240, 255, 0.04);
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    color: var(--neon-cyan);
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media(hover: hover) {
+    .checkout-btn:hover {
+        background: var(--neon-cyan);
+        color: var(--bg-dark);
+        box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+        transform: translateY(-1px);
+    }
+}
+
+.checkout-btn i {
+    transition: transform 0.3s ease;
+}
+
+@media(hover: hover) {
+    .checkout-btn:hover i {
+        transform: translateX(4px);
+    }
+}
+
+.checkout-btn:active {
+    transform: translateY(1px);
+    opacity: 0.9;
+}
+
+/*===== Media =====*/
+
+@media (max-width: 768px) {
+
+    .cart-page {
+        overflow-x: hidden !important;
+        background: linear-gradient(350deg, #0d1c35 0%, #060337 50%, #030712 100%) !important;
+    }
+
+    .cart-section {
+        padding-top: 50px;
+    }
+
+    .cart-section .section-content .cart-title {
+        padding: 10px 30px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+
+    .cart-section .neon-line.cart-line {
+        margin-bottom: 45px;
+    }
+
+    .cart-section .empty-message {
+        font-size: 0.95rem;
+        padding: 45px 15px;
+    }
+
+    .cart-summary-box {
+        margin: 40px auto 0 auto;
+        padding: 1.5rem;
+    }
+}

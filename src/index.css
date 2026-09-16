@@ -1,0 +1,37 @@
+:root {
+    --bg-dark: #030712;
+    --bg-dark-black: #000;
+    --bg-dark-card: #0b1528;
+    --bg-dark-hover: #112240;
+    --neon-cyan: #00f0ff;
+    --neon-cyan-glow: #060337;
+    --neon-blue-royal: #3b82f6;
+    --text-white: #e6f1e6;
+    --text-pure-white: #f8fafc;
+    --text-muted-gray: #64748b;
+    --text-muted-dark-gray: #4c5768;
+    --neon-red: #ff0055;
+    --neon-red-glow: #330011;
+    --border-glow: 1px solid rgba(0, 240, 255, 0.08);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --neon-green: #00ff66;
+    --dark-green: rgb(12, 76, 12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-white);
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+
+

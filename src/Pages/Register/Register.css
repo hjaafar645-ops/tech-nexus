@@ -1,0 +1,215 @@
+.register-page {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 24px 60px 24px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.register-board {
+    max-width: 460px;
+    width: 100%;
+    background: rgba(6, 11, 22, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 6px;
+    padding: 2.5rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+    box-sizing: border-box;
+}
+
+.register-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-pure-white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0.4rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.register-title i {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px var(--neon-cyan);
+
+}
+
+.register-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--neon-cyan), transparent);
+    margin-bottom: 2.5rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 100%;
+}
+
+.register-form-input {
+    width: 100%;
+    background: rgba(3, 7, 18, 0.6);
+    border: 1px solid rgba(0, 240, 255, 0.15);
+    color: var(--text-pure-white);
+    padding: 14px 16px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.floating-group {
+    position: relative;
+    width: 100%;
+}
+
+.floating-group .register-form-label {
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.95rem;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 6px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-origin: left top;
+}
+
+.register-form-input:focus~.register-form-label,
+.register-form-input:not(:placeholder-shown)~.register-form-label {
+    transform: translateY(-24px) scale(0.8);
+    color: var(--neon-cyan) !important;
+    background: var(--bg-dark) !important;
+    border: 1px solid rgba(0, 240, 255, 0.3) !important;
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.1);
+    text-shadow: 0 0 4px rgba(0, 240, 255, 0.3);
+    font-weight: 700;
+}
+
+.register-form-input:focus {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
+}
+
+.inline-error-text {
+    position: absolute;
+    color: var(--neon-red) !important;
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 6px;
+    bottom: -18px;
+    left: 2px;
+    animation: errorPulse 0.3s ease-out forwards;
+}
+
+.input-error-border {
+    border-color: var(--neon-red) !important;
+    box-shadow: 0 0 8px rgba(255, 0, 85, 0.15) !important;
+}
+
+@keyframes errorPulse {
+    0% {
+        opacity: 0;
+        transform: translateY(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.register-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+    .register-btn:hover {
+        background: var(--neon-cyan);
+        color: var(--bg-dark);
+        box-shadow: 0 0 8px var(--neon-cyan);
+    }
+}
+
+.register-back-home-text {
+    color: rgba(255, 255, 255, 0.35) !important;
+    font-size: 0.82rem !important;
+    text-align: center !important;
+    line-height: 1.5;
+    margin-top: 1.5rem !important;
+}
+
+.register-back-home-text a {
+    color: var(--neon-cyan) !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    display: inline-block;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+    .register-back-home-text a:hover {
+        color: var(--text-pure-white) !important;
+        text-shadow: 0 0 8px var(--neon-cyan) !important;
+    }
+}
+
+/*===== Media =====*/
+@media (max-width: 575px) {
+    .register-page {
+        padding: 50px 16px 40px 16px;
+        overflow-x: hidden !important;
+        background: linear-gradient(350deg, #0d1c35 0%, #060337 50%, #030712 100%) !important;
+    }
+
+    .register-board {
+        padding: 2rem 1.2rem !important;
+    }
+
+    .register-title {
+        font-size: 1.1rem;
+    }
+
+    .register-btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .register-page {
+        overflow-x: hidden !important;
+        background: linear-gradient(350deg, #0d1c35 0%, #060337 50%, #030712 100%) !important;
+    }
+}
